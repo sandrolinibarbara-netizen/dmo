@@ -2,112 +2,142 @@
   "cycling": [
     {
       "titolo": "L’Eroica Gaiole",
-      "date": "2025-10-04",
+      "data": "2025-10-04",
       "luogo": "Gaiole in Chianti (SI), Toscana",
-      "costo": "120",
-      "descrizione": "La più nota cicloturistica vintage sulle strade bianche del Chianti, con più percorsi e bici d’epoca."
+      "costo": 120,
+      "descrizione": "La più nota cicloturistica vintage sulle strade bianche del Chianti, con più percorsi e bici d’epoca.",
+      "immagine": "cycling1.webp",
+      "tags": ["Arte & Cultura", "Cicloturismo"]
     },
     {
       "titolo": "Nove Colli",
-      "date": "2025-05-18",
+      "data": "2025-05-18",
       "luogo": "Cesenatico (FC), Emilia-Romagna",
-      "costo": "110",
-      "descrizione": "La granfondo più storica d’Italia con percorsi Medio e Lungo attraverso l’Appennino romagnolo."
+      "costo": 110,
+      "descrizione": "La granfondo più storica d’Italia con percorsi Medio e Lungo attraverso l’Appennino romagnolo.",
+      "immagine": "cycling2.webp",
+      "tags": ["Cicloturismo", "Aria aperta"]
     },
     {
       "titolo": "La Stelvio Santini",
-      "date": "2025-06-08",
+      "data": "2025-06-08",
       "luogo": "Bormio (SO), Lombardia",
-      "costo": "130",
-      "descrizione": "Granfondo iconica con arrivo al Passo dello Stelvio; tre percorsi (64/108/130 km)."
+      "costo": 130,
+      "descrizione": "Granfondo iconica con arrivo al Passo dello Stelvio; si sceglie tra tre percorsi: da 64, 108 e 130 km.",
+      "immagine": "cycling1.webp",
+      "tags": ["Cicloturismo", "Aria aperta"]
     },
     {
       "titolo": "Bike Night Emilia-Romagna",
-      "date": "2025-06-14/2025-06-15",
+      "data": "2025-06-14/2025-06-15",
       "luogo": "Ferrara, Emilia-Romagna",
-      "costo": "45",
-      "descrizione": "Pedalata notturna di 100 km lungo le ciclabili del Po, dalla città al mare."
+      "costo": 45,
+      "descrizione": "Pedalata notturna di 100 km lungo le ciclabili del Po, dalla città al mare.",
+      "immagine": "cycling2.webp",
+      "tags": ["Arte & Cultura", "Cicloturismo"]
     },
     {
       "titolo": "Gran Fondo Strade Bianche",
-      "date": "2025-03-09",
+      "data": "2025-03-09",
       "luogo": "Siena, Toscana",
-      "costo": "119",
-      "descrizione": "Granfondo su strade bianche nel paesaggio toscano, legata alla classica pro."
+      "costo": 119,
+      "descrizione": "Granfondo su strade bianche nel paesaggio toscano, legata alla classica pro.",
+      "immagine": "cycling1.webp",
+      "tags": ["Cicloturismo", "Aria aperta"]
     }
   ],
   "stones": [
     {
       "titolo": "Villa d’Este",
-      "date": "2025-06-10",
+      "data": "2025-06-10",
       "luogo": "Tivoli (RM), Lazio",
-      "costo": "25",
-      "descrizione": "Capolavoro rinascimentale celebre per giardini e fontane; gestione CoopCulture."
+      "costo": 25,
+      "descrizione": "Capolavoro rinascimentale celebre per giardini e fontane.",
+      "immagine": "villa1.webp",
+      "tags": ["Arte & Cultura", "Aria aperta"]
     },
     {
       "titolo": "Villa Adriana",
-      "date": "2025-12-24",
+      "data": "2025-12-24",
       "luogo": "Tivoli (RM), Lazio",
-      "costo": "30",
-      "descrizione": "La residenza imperiale di Adriano: area archeologica monumentale."
+      "costo": 30,
+      "descrizione": "La residenza imperiale di Adriano: area archeologica monumentale.",
+      "immagine": "villa2.webp",
+      "tags": ["Arte & Cultura", "Museo"]
     },
     {
       "titolo": "Villa del Balbianello",
-      "date": "2025-10-20",
+      "data": "2025-10-20",
       "luogo": "Tremezzina (CO), Lombardia",
-      "costo": "40",
-      "descrizione": "Villa del XVIII secolo affacciata sul Lago di Como, set di celebri film."
+      "costo": 40,
+      "descrizione": "Villa del XVIII secolo affacciata sul Lago di Como, set di celebri film.",
+      "immagine": "villa1.webp",
+      "tags": ["Arte & Cultura", "Museo"]
     },
     {
       "titolo": "Villa Carlotta",
-      "date": "2025-03-21",
+      "data": "2025-03-21",
       "luogo": "Tremezzina (CO), Lombardia",
-      "costo": "45",
-      "descrizione": "Villa e giardino botanico sul Lago di Como, collezioni d’arte e fioriture."
+      "costo": 45,
+      "descrizione": "Villa e giardino botanico sul Lago di Como, collezioni d’arte e fioriture.",
+      "immagine": "villa2.webp",
+      "tags": ["Arte & Cultura", "Aria aperta"]
     },
     {
       "titolo": "Villa della Regina",
-      "date": "2025-04-21",
+      "data": "2025-04-21",
       "luogo": "Torino, Piemonte",
-      "costo": "25",
-      "descrizione": "Residenza sabauda barocca sulla collina di Torino, con giardini storici."
+      "costo": 25,
+      "descrizione": "Residenza sabauda barocca sulla collina di Torino, con giardini storici.",
+      "immagine": "villa1.webp",
+      "tags": ["Arte & Cultura", "Aria aperta"]
     }
   ],
   "luthiery": [
     {
       "titolo": "Museo del Violino",
-      "date": "2025-08-02",
+      "data": "2025-08-02",
       "luogo": "Cremona, Lombardia",
-      "costo": "17",
-      "descrizione": "Percorso sulla liuteria cremonese con strumenti storici di Stradivari, Amati e Guarneri."
+      "costo": 17,
+      "descrizione": "Percorso sulla liuteria cremonese con strumenti storici di Stradivari, Amati e Guarneri.",
+      "immagine": "violin1.webp",
+      "tags": ["Arte & Cultura", "Museo"]
     },
     {
       "titolo": "Audizioni all’Auditorium Giovanni Arvedi",
-      "date": "2025-04-06",
+      "data": "2025-04-06",
       "luogo": "Cremona, Lombardia",
-      "costo": "15",
-      "descrizione": "Brevi concerti su strumenti storici delle collezioni del Museo del Violino."
+      "costo": 15,
+      "descrizione": "Brevi concerti su strumenti storici delle collezioni del Museo del Violino.",
+      "immagine": "violin2.webp",
+      "tags": ["Arte & Cultura", "Museo"]
     },
     {
       "titolo": "Visita in bottega di liuteria (Target Turismo)",
-      "date": "2025-09-12",
+      "data": "2025-09-12",
       "luogo": "Cremona, Lombardia",
-      "costo": "35",
-      "descrizione": "Ingresso in una bottega artigiana per scoprire fasi, materiali e strumenti della liuteria."
+      "costo": 35,
+      "descrizione": "Ingresso in una bottega artigiana per scoprire fasi, materiali e strumenti della liuteria.",
+      "immagine": "violin1.webp",
+      "tags": ["Arte & Cultura", "Museo"]
     },
     {
       "titolo": "Musei Cremona",
-      "date": "2025-05-01",
+      "data": "2025-05-01",
       "luogo": "Cremona, Lombardia",
-      "costo": "20",
-      "descrizione": "Visita guidata speciale ai Musei Civici."
+      "costo": 20,
+      "descrizione": "Visita guidata speciale ai Musei Civici.",
+      "immagine": "violin2.webp",
+      "tags": ["Arte & Cultura", "Museo"]
     },
     {
       "titolo": "Cremona Musica – International Exhibitions & Festival",
-      "date": "2025-09-08",
+      "data": "2025-09-08",
       "luogo": "Cremona, Lombardia",
-      "costo": "50",
-      "descrizione": "La fiera/festival internazionale dedicata a strumenti e musica."
+      "costo": 50,
+      "descrizione": "La fiera/festival internazionale dedicata a strumenti e musica.",
+      "immagine": "violin1.webp",
+      "tags": ["Arte & Cultura", "Museo"]
     }
   ]
 }

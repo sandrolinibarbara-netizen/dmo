@@ -12,6 +12,7 @@
     "@tailwindcss/vite": "^4.1.16",
     "@vuepic/vue-datepicker": "^11.0.3",
     "leaflet": "^1.9.4",
+    "pathe": "^2.0.3",
     "tailwindcss": "^4.1.16",
     "vue": "^3.5.22",
     "vue-map-ui": "^0.0.18"

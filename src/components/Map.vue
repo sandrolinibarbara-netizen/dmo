@@ -22,7 +22,7 @@ function onViewChanged(e: ViewChangedEvent) {
 </script>
 
 <template>
-  <div class="w-[80%] mx-auto my-12">
+  <div class="w-[80%] mx-auto my-24">
     <h2 class="font-bold text-xl mb-4 px-4">Scopri cosa offre il territorio vicino a te</h2>
 
     <div class="flex items-center gap-4 px-4 mb-2">
@@ -42,7 +42,7 @@ function onViewChanged(e: ViewChangedEvent) {
           <button type="button" class="border rounded-full px-4 py-2">Tales of Stones</button>
         </li>
         <li>
-          <button type="button" class="border rounded-full px-4 py-2">Tales of Luthery</button>
+          <button type="button" class="border rounded-full px-4 py-2">Tales of Luthiery</button>
         </li>
       </ul>
     </div>
