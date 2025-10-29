@@ -13,3 +13,11 @@ button[type="submit"] {
 button[type="button"].filter {
     @apply bg-gray-50;
 }
+
+.leaflet-popup-content-wrapper {
+    padding: 0 0 1px 0 !important;
+}
+
+.leaflet-popup-content {
+    margin: 0 !important;
+}

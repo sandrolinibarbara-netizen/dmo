@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Menu from "../components/Menu.vue";
 import Hero from "../components/Hero.vue";
 import Map from "../components/Map.vue";
 import Cards from "../components/Cards.vue";
@@ -9,11 +8,9 @@ import Stories from "../components/Stories.vue";
 import Social from "../components/Social.vue";
 import ContactForm from "../components/ContactForm.vue";
 import SponsorPartner from "../components/SponsorPartner.vue";
-import Footer from "../components/Footer.vue";
 </script>
 
 <template>
-  <Menu/>
   <Hero/>
   <Map/>
   <Cards/>
@@ -23,7 +20,6 @@ import Footer from "../components/Footer.vue";
   <Social/>
   <ContactForm/>
   <SponsorPartner/>
-  <Footer/>
 </template>
 
 <style scoped>

@@ -36,9 +36,9 @@ const logos = Object.fromEntries(
 </script>
 
 <template>
-  <div class="flex gap-4">
+  <div class="flex items-center gap-4">
     <img :src="logos[theme.logo]" alt="logo tema" class=""/>
-    <h3>TALES OF <br/>
+    <h3 class="text-3xl">TALES OF <br/>
     <span class="font-bold">{{theme.title.toUpperCase()}}</span>
     </h3>
   </div>

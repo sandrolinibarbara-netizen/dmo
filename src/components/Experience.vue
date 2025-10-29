@@ -6,7 +6,8 @@ type Experience = {
   description: string,
   image: string,
   price: number,
-  tags: string[]
+  tags: string[],
+  width?: 'full' | undefined
 }
 const props = defineProps<Experience>();
 
@@ -23,7 +24,7 @@ function removeExtension(str:string) {
 </script>
 
 <template>
-  <div class="w-[20%] rounded-xl bg-gray-50 relative border-1 border-orange-500">
+  <div :class="`${!props.width ? 'w-[20%]' : 'w-full'} rounded-xl bg-gray-50 relative border-1 border-orange-500`">
     <div class="absolute flex gap-2 top-1 left-1 w-full">
       <span v-for="tag in props.tags" :key="props.title + '_' + tag" class="max-w-[42.5%] rounded-full px-2 py-1 text-xs bg-sky-100 whitespace-nowrap overflow-hidden text-ellipsis">
         {{tag}}
