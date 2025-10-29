@@ -9,3 +9,7 @@ body {
 button[type="submit"] {
     @apply bg-orange-500;
 }
+
+button[type="button"].filter {
+    @apply bg-gray-50;
+}

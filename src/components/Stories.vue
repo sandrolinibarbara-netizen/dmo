@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="w-[80%] mx-auto my-24 flex gap-4">
+  <section class="w-[80%] mx-auto my-24 flex gap-4">
     <img class="rounded-xl w-[25%] object-cover" src="../assets/images/home/stories/monument.webp" alt="monumenti"/>
     <div class="w-[75%] flex flex-col items-end">
       <div class="flex gap-[0.5%]">
@@ -20,7 +20,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
 </template>
 

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="w-[80%] mx-auto">
+  <section class="w-[80%] mx-auto">
     <img class="my-8 rounded-xl w-full" src="../assets/images/home/panorama.webp" alt="panorama Cremona"/>
     <div class="flex gap-12 w-full flex items-center">
       <div class="px-4 pb-2">
@@ -17,7 +17,7 @@
       </div>
       <img class="w-[45%] rounded-xl" src="../assets/images/home/violin-player.webp" alt="violinista"/>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>

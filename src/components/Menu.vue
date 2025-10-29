@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="bg-sky-950 w-full">
+  <header class="bg-sky-950 w-full">
     <div class="flex items-center justify-between w-[80%] mx-auto">
       <img src="../assets/logo_dmo.svg" alt="logo tales of harmony"/>
       <div class="flex gap-8">
@@ -12,7 +12,7 @@
         <button type="button" class="font-bold text-gray-50">M</button>
       </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <style scoped>

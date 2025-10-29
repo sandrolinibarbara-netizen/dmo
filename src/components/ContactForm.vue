@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="w-[80%] mx-auto my-24 flex flex-col gap-4">
+  <section class="w-[80%] mx-auto my-24 flex flex-col gap-4">
     <div class="bg-gray-50 rounded-xl w-full p-8 gap-4 items-center">
       <h2 class="font-bold text-xl mb-4">Resta in contatto con noi</h2>
       <h4 class="mb-6">Iscriviti alla newsletter<br/>
@@ -30,7 +30,7 @@
 
     </div>
 
-  </div>
+  </section>
 </template>
 
 <style scoped>

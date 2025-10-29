@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="w-[80%] mx-auto my-24 flex flex-col gap-4">
+  <section class="w-[80%] mx-auto my-24 flex flex-col gap-4">
     <div class="bg-pink-100 rounded-xl w-full p-16 flex gap-4 items-center">
       <h2 class="font-bold text-xl w-2/4">Seguici sui nostri canali Social!</h2>
 
@@ -16,7 +16,7 @@
 
     </div>
 
-  </div>
+  </section>
 
 </template>
 

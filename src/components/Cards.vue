@@ -14,7 +14,7 @@ const linesUnica = [
 </script>
 
 <template>
-  <div class="w-[80%] mx-auto my-24">
+  <section class="w-[80%] mx-auto my-24">
 
     <div class="flex gap-12 w-full flex items-center">
       <div class="px-4 pb-2">
@@ -30,7 +30,7 @@ const linesUnica = [
       <Card title="Unica" :price="35" :description="linesUnica"/>
     </div>
 
-  </div>
+  </section>
 </template>
 
 <style scoped>

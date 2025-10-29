@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="bg-sky-950 w-full h-[35vh] py-12">
+  <footer class="bg-sky-950 w-full h-[35vh] py-12">
     <div class="flex w-[80%] mx-auto justify-between gap-8">
 
       <div class="w-2/4 flex gap-8">
@@ -43,7 +43,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </footer>
 </template>
 
 <style scoped>

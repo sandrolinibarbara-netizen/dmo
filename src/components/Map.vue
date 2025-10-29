@@ -22,7 +22,7 @@ function onViewChanged(e: ViewChangedEvent) {
 </script>
 
 <template>
-  <div class="w-[80%] mx-auto my-24">
+  <section class="w-[80%] mx-auto my-24">
     <h2 class="font-bold text-xl mb-4 px-4">Scopri cosa offre il territorio vicino a te</h2>
 
     <div class="flex items-center gap-4 px-4 mb-2">
@@ -36,13 +36,13 @@ function onViewChanged(e: ViewChangedEvent) {
       <p>Filtri:</p>
       <ul class="text-sm flex gap-4">
         <li>
-          <button type="button" class="border rounded-full px-4 py-2">Tales of Cycling</button>
+          <button type="button" class="border border-gray-300 filter rounded-full px-4 py-2">Tales of Cycling</button>
         </li>
         <li>
-          <button type="button" class="border rounded-full px-4 py-2">Tales of Stones</button>
+          <button type="button" class="border border-gray-300 filter rounded-full px-4 py-2">Tales of Stones</button>
         </li>
         <li>
-          <button type="button" class="border rounded-full px-4 py-2">Tales of Luthiery</button>
+          <button type="button" class="border border-gray-300 filter rounded-full px-4 py-2">Tales of Luthiery</button>
         </li>
       </ul>
     </div>
@@ -52,7 +52,7 @@ function onViewChanged(e: ViewChangedEvent) {
       <VMapZoomControl />
     </VMap>
 
-  </div>
+  </section>
 </template>
 
 <style scoped>

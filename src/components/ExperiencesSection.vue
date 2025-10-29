@@ -5,7 +5,7 @@ import json from '../assets/experiences.json'
 </script>
 
 <template>
-  <div class="w-[80%] mx-auto my-24 flex flex-col gap-4">
+  <section class="w-[80%] mx-auto my-24 flex flex-col gap-4">
     <Experiences title="Unmissable" color="bg-yellow-100" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt tellus nec augue hendrerit, ut tincidunt velit cursus. In in vestibulum turpis. Nulla a venenatis libero. Donec dictum dui sit amet enim consectetur rhoncus. Sed ultricies quam vel felis consequat, non fringilla justo ornare. Nullam id lobortis risus.">
       <Experience v-for="exp in json.cycling" :key="exp.titolo + '_' + Math.random()" :title="exp.titolo" :image="exp.immagine" :price="exp.costo" :description="exp.descrizione" :tags="exp.tags" />
     </Experiences>
@@ -19,7 +19,7 @@ import json from '../assets/experiences.json'
         <span class="bottom-0 absolute bg-gray-50 rounded-tr-xl rounded-bl-xl px-4 py-3 font-semibold">Crociera sul fiume Po</span>
       </div>
     </Experiences>
-  </div>
+  </section>
 </template>
 
 <style scoped>
