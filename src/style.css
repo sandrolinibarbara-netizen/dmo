@@ -1,3 +1,11 @@
 @import 'tailwindcss/theme.css';
 @import 'tailwindcss/preflight.css';
 @import 'tailwindcss/utilities.css';
+
+body {
+    background-color: #ebf5ff;
+}
+
+button[type="submit"] {
+    @apply bg-orange-500;
+}

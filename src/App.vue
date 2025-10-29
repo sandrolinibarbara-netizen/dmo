@@ -6,6 +6,10 @@ import Cards from "./components/Cards.vue";
 import ExperiencesSection from "./components/ExperiencesSection.vue";
 import Events from "./components/Events.vue";
 import Stories from "./components/Stories.vue";
+import Social from "./components/Social.vue";
+import ContactForm from "./components/ContactForm.vue";
+import SponsorPartner from "./components/SponsorPartner.vue";
+import Footer from "./components/Footer.vue";
 
 </script>
 
@@ -17,6 +21,10 @@ import Stories from "./components/Stories.vue";
   <ExperiencesSection/>
   <Events/>
   <Stories/>
+  <Social/>
+  <ContactForm/>
+  <SponsorPartner/>
+  <Footer/>
 </template>
 
 <style scoped>

@@ -9,7 +9,7 @@ type Line = { icon:string, line: string };
 </script>
 
 <template>
-  <div class="w-2/4 border-1 rounded-xl p-8">
+  <div class="w-2/4 border-1 border-slate-950 rounded-xl p-8 bg-gray-50">
     <div class="flex items-center justify-between mb-6">
       <h3 class="text-xl font-bold">{{props.title}}</h3>
       <span class="text-xl font-bold">{{props.price.toLocaleString("de-DE", { style: "currency", currency: "EUR" })}}</span>
