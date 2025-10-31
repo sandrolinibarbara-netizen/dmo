@@ -3,15 +3,39 @@
 @import 'tailwindcss/utilities.css';
 
 body {
-    background-color: #ebf5ff;
+    background-color: #fff6ef;
 }
 
-button[type="submit"] {
-    @apply bg-orange-500;
+input::placeholder {
+    color: #9a3412 !important;
+    opacity: 1 !important; /* Firefox */
+}
+
+button[type="submit"].form {
+    @apply bg-gray-50;
+    @apply text-orange-800;
 }
 
 button[type="button"].filter {
+    @apply bg-orange-200;
+    @apply text-orange-500;
+}
+
+button[type="button"].filter-base {
     @apply bg-gray-50;
+    @apply text-orange-800;
+}
+
+button[type="button"].filter-tc {
+    @apply bg-violet-300;
+}
+
+button[type="button"].filter-ts {
+    @apply bg-amber-400;
+}
+
+button[type="button"].filter-tl {
+    @apply bg-sky-300;
 }
 
 .leaflet-popup-content-wrapper {

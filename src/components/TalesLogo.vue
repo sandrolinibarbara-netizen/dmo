@@ -13,16 +13,19 @@ const theme = computed(() => {
       return {
         title: "cycling",
         logo: "cycling-logo",
+        color: "text-violet-300"
       }
     case "stones":
       return {
         title: "ancient stones",
         logo: "stones-logo",
+        color: "text-amber-400"
       }
     case "luthiery":
       return {
         title: "music & luthiery",
         logo: "luthiery-logo",
+        color: "text-sky-300"
       }
   }
 })
@@ -38,9 +41,12 @@ const logos = Object.fromEntries(
 <template>
   <div class="flex items-center gap-4">
     <img :src="logos[theme.logo]" alt="logo tema" class=""/>
-    <h3 class="text-3xl">TALES OF <br/>
-    <span class="font-bold">{{theme.title.toUpperCase()}}</span>
-    </h3>
+    <div class="flex flex-col gap-5">
+      <h3 class="text-3xl">TALES OF <br/>
+      <span :class="`font-bold ${theme.color}`">{{theme.title.toUpperCase()}}</span>
+      </h3>
+      <h4>VISIT <span class="font-semibold">CREMONA</span></h4>
+    </div>
   </div>
 
 </template>

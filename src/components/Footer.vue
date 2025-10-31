@@ -28,14 +28,14 @@
       </div>
 
       <div class="w-2/4 flex gap-12 justify-center">
-        <div class="text-xs text-gray-50 pt-4 flex flex-col gap-4 ">
+        <div class="text-xs text-gray-50 pt-4 flex flex-col gap-4 text-orange-500">
           <a href="/" class="underline">Guida del brand</a>
           <a href="/" class="underline">Dichiarazione di accessibilità</a>
           <a href="/" class="underline">Amministrazione trasparente</a>
           <a href="/" class="underline">Partner</a>
         </div>
 
-        <div class="text-xs text-gray-50 pt-4 flex flex-col gap-4">
+        <div class="text-xs text-gray-50 pt-4 flex flex-col gap-4 text-orange-500">
           <a href="/" class="underline">Chi siamo</a>
           <a href="/" class="underline">Come raggiungerci</a>
           <a href="/" class="underline">Richiesta informazioni</a>

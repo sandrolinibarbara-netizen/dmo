@@ -3,10 +3,10 @@ import { VMap, VMapOsmTileLayer, VMapZoomControl } from 'vue-map-ui';
 import type { LatLng, LatLngBounds, LatLngTuple } from 'leaflet';
 import type { ViewChangedEvent } from 'vue-use-leaflet';
 import {ref} from "vue";
-import VueDatePicker from '@vuepic/vue-datepicker';
+// import VueDatePicker from '@vuepic/vue-datepicker';
 import '@vuepic/vue-datepicker/dist/main.css'
 
-const date = ref();
+// const date = ref();
 
 const center = ref<LatLngTuple | LatLng>([45.136887, 10.028458]);
 const zoom = ref(14);
@@ -22,36 +22,42 @@ function onViewChanged(e: ViewChangedEvent) {
 </script>
 
 <template>
-  <section class="w-[80%] mx-auto my-24">
-    <h2 class="font-bold text-xl mb-4 px-4">Scopri cosa offre il territorio vicino a te</h2>
+  <section class="w-full mt-24 border-b border-orange-800 pb-24">
+    <div class="w-[80%] mx-auto">
+      <h2 class="font-bold text-3xl mb-8 px-4">Scopri cosa offre il territorio vicino a te</h2>
 
-    <div class="flex items-center gap-4 px-4 mb-2">
-      <p>Scegli la data:</p>
-      <div class="w-[200px]">
-        <VueDatePicker v-model="date" :enable-time-picker="false" locale="it" select-text="Seleziona" cancel-text="Chiudi" :action-row="{ showPreview: false }"></VueDatePicker>
+  <!--    <div class="flex items-center gap-4 px-4 mb-2">-->
+  <!--      <p>Scegli la data:</p>-->
+  <!--      <div class="w-[200px]">-->
+  <!--        <VueDatePicker v-model="date" :enable-time-picker="false" locale="it" select-text="Seleziona" cancel-text="Chiudi" :action-row="{ showPreview: false }"></VueDatePicker>-->
+  <!--      </div>-->
+  <!--    </div>-->
+
+      <div class="flex items-center gap-4 px-4 mb-4">
+        <ul class="text-sm flex gap-4">
+          <li>
+            <button type="button" class="flex items-center border border-orange-800 filter-base rounded-full px-4 py-2">
+              <span class="flex items-center justify-center w-6 h-6 border-1 border-orange-800 rounded-lg font-bold text-xs text-orange-800 mr-2">F</span>
+              Filtri
+            </button>
+          </li>
+          <li>
+            <button type="button" class="filter rounded-full px-4 py-2">Cycling</button>
+          </li>
+          <li>
+            <button type="button" class="filter rounded-full px-4 py-2">Ancient Stones</button>
+          </li>
+          <li>
+            <button type="button" class="filter rounded-full px-4 py-2">Music & Luthiery</button>
+          </li>
+        </ul>
       </div>
+
+      <VMap style="height: 600px; border-radius: 8px" :center="center" :zoom="zoom" @view-changed="onViewChanged">
+        <VMapOsmTileLayer />
+        <VMapZoomControl />
+      </VMap>
     </div>
-
-    <div class="flex items-center gap-4 px-4 mb-4">
-      <p>Filtri:</p>
-      <ul class="text-sm flex gap-4">
-        <li>
-          <button type="button" class="border border-gray-300 filter rounded-full px-4 py-2">Tales of Cycling</button>
-        </li>
-        <li>
-          <button type="button" class="border border-gray-300 filter rounded-full px-4 py-2">Tales of Stones</button>
-        </li>
-        <li>
-          <button type="button" class="border border-gray-300 filter rounded-full px-4 py-2">Tales of Luthiery</button>
-        </li>
-      </ul>
-    </div>
-
-    <VMap style="height: 600px; border-radius: 8px" :center="center" :zoom="zoom" @view-changed="onViewChanged">
-      <VMapOsmTileLayer />
-      <VMapZoomControl />
-    </VMap>
-
   </section>
 </template>
 

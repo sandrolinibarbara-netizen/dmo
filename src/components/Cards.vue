@@ -14,22 +14,25 @@ const linesUnica = [
 </script>
 
 <template>
-  <section class="w-[80%] mx-auto my-24">
-
-    <div class="flex gap-12 w-full flex items-center">
-      <div class="px-4 pb-2">
-        <h2 class="font-bold text-xl">Cards of Harmony</h2>
-        <p class="mt-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu fringilla arcu. Nulla condimentum quam eget magna mollis, non eleifend leo varius. Praesent eleifend purus nec eros porttitor laoreet. In hac habitasse platea dictumst. </p>
+  <section class="w-full mt-16 border-b border-orange-800 pb-24">
+    <div class="w-[80%] mx-auto">
+      <div class="flex w-full flex items-center">
+        <div class="px-4 pb-2">
+          <h2 class="font-bold text-3xl">Cards of Harmony</h2>
+          <h4 class="text-xl">Usufruisci di tanti vantaggi e sconti</h4>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu fringilla arcu. Nulla condimentum quam eget magna mollis, non eleifend leo varius. Praesent eleifend purus nec eros porttitor laoreet. In hac habitasse platea dictumst.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu fringilla arcu. Nulla condimentum quam eget magna mollis, non eleifend leo varius.
+          </p>
+        </div>
+        <img class="w-[60%] rounded-xl" src="../assets/images/home/cards.webp" alt="cards of harmony"/>
       </div>
-      <img class="w-[45%] rounded-xl" src="../assets/images/home/cards.webp" alt="cards of harmony"/>
-    </div>
 
-    <div class="flex gap-4">
-      <Card title="Welcome" :price="12" :description="linesWelcome"/>
-      <Card title="Unica" :price="35" :description="linesUnica"/>
+      <div class="flex gap-4">
+        <Card title="Welcome" :price="12" :description="linesWelcome" color="blue"/>
+        <Card title="Unica" :price="35" :description="linesUnica" color="orange"/>
+      </div>
     </div>
-
   </section>
 </template>
 

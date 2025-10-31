@@ -19,19 +19,19 @@ const theme = computed(() => {
       return {
         title: "cycling",
         json: json.cycling,
-        color: 'bg-sky-100'
+        color: 'bg-violet-300'
       }
     case "stones":
       return {
         title: "ancient stones",
         json: json.stones,
-        color: 'bg-red-100'
+        color: 'bg-amber-400'
       }
     case "luthiery":
       return {
         title: "music & luthiery",
         json: json.luthiery,
-        color: 'bg-stone-100'
+        color: 'bg-sky-300'
       }
   }
 })
@@ -101,8 +101,8 @@ function log(marker:Marker, json:any) {
         <VMapZoomControl />
       </VMap>
       <div class="w-full text-right">
-        <a href="/" class="rounded-full bg-gray-200 px-4 py-2 text-sm mr-4">Scarica i materiali</a>
-        <RouterLink to="/discover" class="rounded-full bg-orange-500 px-4 py-2 text-sm">Vedi tutti i contenuti di <span class="capitalize">{{theme.title}}</span> ></RouterLink>
+        <a href="/" class="rounded-full bg-gray-50 border-1 border-orange-800 text-orange-800 px-4 py-3 text-sm mr-4">Scarica i materiali</a>
+        <RouterLink to="/discover" class="rounded-full bg-gray-50 border-1 border-orange-800 text-orange-800 px-4 py-3 text-sm">Vedi tutti i contenuti di <span class="capitalize">{{theme.title}}</span> ></RouterLink>
       </div>
     </div>
   </div>
