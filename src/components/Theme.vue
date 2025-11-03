@@ -72,7 +72,7 @@ function log(marker:Marker, json:any) {
           '      <p class="text-sm h-[80px] line-clamp-4">' + json.descrizione + '</p>' +
           '      <div class="mt-4 w-full flex justify-between items-center">\n' +
           '        <p>'+ json.costo.toLocaleString("de-DE", { style: "currency", currency: "EUR" }) +'</p>' +
-          '        <a class="rounded-full bg-gray-200 px-4 py-2 text-sm" href="/">Scopri</a>\n' +
+          '        <a class="discover rounded-full bg-gray-200 px-4 py-2 text-sm" href="/">Scopri</a>\n' +
           '      </div>' +
           '    </div>' +
           '  </div>'
