@@ -31,18 +31,6 @@ button[type="button"].filter-base {
     @apply text-orange-800;
 }
 
-button[type="button"].filter-tc {
-    @apply bg-violet-300;
-}
-
-button[type="button"].filter-ts {
-    @apply bg-amber-400;
-}
-
-button[type="button"].filter-tl {
-    @apply bg-sky-300;
-}
-
 .leaflet-popup-content-wrapper {
     padding: 0 0 1px 0 !important;
 }

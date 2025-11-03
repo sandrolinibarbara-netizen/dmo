@@ -9,15 +9,15 @@ import Theme from "./Theme.vue";
       <h2 class="font-bold text-3xl">Le anime del territorio</h2>
       <h4 class="text-xl">Duis eu fringilla arcu</h4>
       <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu fringilla arcu. Nulla condimentum quam eget magna mollis, non eleifend leo varius. Praesent eleifend purus nec eros porttitor laoreet. In hac habitasse platea dictumst. Aliquam ultrices justo eu tempor aliquet.</p>
-      <ul class="text-sm flex gap-4 my-8">
+      <ul class="text-sm flex gap-4 mt-12 mb-16">
         <li>
-          <button type="button" class="filter-tc rounded-full px-4 py-3">Cycling</button>
+          <RouterLink :to="{hash: '#cycling'}" replace class="bg-violet-300 rounded-full px-4 py-3">Cycling</RouterLink>
         </li>
         <li>
-          <button type="button" class="filter-ts rounded-full px-4 py-3">Ancient Stones</button>
+          <RouterLink :to="{hash: '#stones'}" replace class="bg-amber-400 rounded-full px-4 py-3">Ancient Stones</RouterLink>
         </li>
         <li>
-          <button type="button" class="filter-tl rounded-full px-4 py-3">Music & Luthiery</button>
+          <RouterLink :to="{hash: '#luthiery'}" replace class="bg-sky-300 rounded-full px-4 py-3">Music & Luthiery</RouterLink>
         </li>
       </ul>
 

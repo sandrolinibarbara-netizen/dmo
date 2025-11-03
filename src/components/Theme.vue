@@ -83,26 +83,28 @@ function log(marker:Marker, json:any) {
 </script>
 
 <template>
-  <TalesLogo :type="props.type" class="mb-8"/>
-  <div class="flex gap-4 mb-16">
-    <div class="flex flex-col gap-4 w-[20%]">
-      <Experience width="full" :title="theme.json[0].titolo" :image="theme.json[0].immagine" :price="theme.json[0].costo" :description="theme.json[0].descrizione" :tags="theme.json[0].tags" />
-      <Experience width="full" :title="theme.json[1].titolo" :image="theme.json[1].immagine" :price="theme.json[1].costo" :description="theme.json[1].descrizione" :tags="theme.json[1].tags" />
-    </div>
-
-    <div class="flex flex-col gap-4 w-[80%]">
-      <div :class="`${theme.color} rounded-xl w-full p-8 text-sm`">
-        Praesent vitae sollicitudin justo. Etiam auctor tortor et dui dictum, sed ultrices dolor dignissim. Sed vitae dui id nunc tincidunt lobortis. Morbi aliquet lectus eu ipsum mattis, non pharetra odio consectetur. Phasellus rutrum, ex sed venenatis euismod, est tortor facilisis libero, sit amet sagittis orci justo in massa. Sed dapibus dolor lorem, eu pulvinar eros accumsan ut. Cras fringilla ligula augue, a venenatis purus posuere id.
+  <div :id="props.type">
+    <TalesLogo :type="props.type" class="mb-8"/>
+    <div class="flex gap-4 mb-16">
+      <div class="flex flex-col gap-4 w-[20%]">
+        <Experience width="full" :title="theme.json[0].titolo" :image="theme.json[0].immagine" :price="theme.json[0].costo" :description="theme.json[0].descrizione" :tags="theme.json[0].tags" />
+        <Experience width="full" :title="theme.json[1].titolo" :image="theme.json[1].immagine" :price="theme.json[1].costo" :description="theme.json[1].descrizione" :tags="theme.json[1].tags" />
       </div>
 
-      <VMap style="height: 100%; width:100%; border-radius: 8px" :center="center" :zoom="zoom" @view-changed="onViewChanged">
-        <VMapMarker v-for="place in theme.json" :key="place.coordinate[0] + '_' + place.coordinate[1]" :latlng="place.coordinate as LatLngTuple" @click="(e) => log(e.target, place)"/>
-        <VMapOsmTileLayer />
-        <VMapZoomControl />
-      </VMap>
-      <div class="w-full text-right">
-        <a href="/" class="rounded-full bg-gray-50 border-1 border-orange-800 text-orange-800 px-4 py-3 text-sm mr-4">Scarica i materiali</a>
-        <RouterLink to="/discover" class="rounded-full bg-gray-50 border-1 border-orange-800 text-orange-800 px-4 py-3 text-sm">Vedi tutti i contenuti di <span class="capitalize">{{theme.title}}</span> ></RouterLink>
+      <div class="flex flex-col gap-4 w-[80%]">
+        <div :class="`${theme.color} rounded-xl w-full p-8 text-sm`">
+          Praesent vitae sollicitudin justo. Etiam auctor tortor et dui dictum, sed ultrices dolor dignissim. Sed vitae dui id nunc tincidunt lobortis. Morbi aliquet lectus eu ipsum mattis, non pharetra odio consectetur. Phasellus rutrum, ex sed venenatis euismod, est tortor facilisis libero, sit amet sagittis orci justo in massa. Sed dapibus dolor lorem, eu pulvinar eros accumsan ut. Cras fringilla ligula augue, a venenatis purus posuere id.
+        </div>
+
+        <VMap style="height: 100%; width:100%; border-radius: 8px" :center="center" :zoom="zoom" @view-changed="onViewChanged">
+          <VMapMarker v-for="place in theme.json" :key="place.coordinate[0] + '_' + place.coordinate[1]" :latlng="place.coordinate as LatLngTuple" @click="(e) => log(e.target, place)"/>
+          <VMapOsmTileLayer />
+          <VMapZoomControl />
+        </VMap>
+        <div class="w-full text-right">
+          <a href="/" class="rounded-full bg-gray-50 border-1 border-orange-800 text-orange-800 px-4 py-3 text-sm mr-4">Scarica i materiali</a>
+          <RouterLink to="/discover" class="rounded-full bg-gray-50 border-1 border-orange-800 text-orange-800 px-4 py-3 text-sm">Vedi tutti i contenuti di <span class="capitalize">{{theme.title}}</span> ></RouterLink>
+        </div>
       </div>
     </div>
   </div>
