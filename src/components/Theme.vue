@@ -93,11 +93,13 @@ function log(marker:Marker, json:any) {
         </div>
         <div class="flex flex-col gap-4 w-[80%]">
           <div class="flex gap-4">
-            <div :class="`${theme.color} rounded-xl w-2/4 px-8 py-4 text-sm flex items-center`">
-              Praesent vitae sollicitudin justo. Etiam auctor tortor et dui dictum, sed ultrices dolor dignissim. Sed vitae dui id nunc tincidunt lobortis. Morbi aliquet lectus eu ipsum mattis, non pharetra odio consectetur. Phasellus rutrum, ex sed venenatis euismod, est tortor facilisis libero, sit amet sagittis orci justo in massa.
+            <div :class="`${theme.color} rounded-xl w-2/4 h-[186px] text-sm py-8 pl-8 pr-4`">
+              <p class="w-full h-full overflow-y-auto pr-4">
+                Praesent vitae sollicitudin justo. Etiam auctor tortor et dui dictum, sed ultrices dolor dignissim. Sed vitae dui id nunc tincidunt lobortis. Morbi aliquet lectus eu ipsum mattis, non pharetra odio consectetur. Phasellus rutrum, ex sed venenatis euismod, est tortor facilisis libero, sit amet sagittis orci justo in massa.
+              </p>
             </div>
-            <div class="w-2/4 min-h-[140px]">
-              <img class="w-[800px] min-h-[140px] h-full object-cover rounded-xl" alt="tale image" src="../assets/images/home/panorama.webp"/>
+            <div class="w-2/4 h-[186px]">
+              <img class="w-[800px] h-[1000px] h-full object-cover rounded-xl" alt="tale image" src="../assets/images/home/panorama.webp"/>
             </div>
           </div>
           <VMap style="height: 100%; width:100%; border-radius: 8px" :center="center" :zoom="zoom" @view-changed="onViewChanged">
@@ -116,5 +118,26 @@ function log(marker:Marker, json:any) {
 </template>
 
 <style scoped>
+/* width */
+::-webkit-scrollbar {
+  height: 1px;
+  width: 1px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #17171780;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #17171780;
+}
 </style>
