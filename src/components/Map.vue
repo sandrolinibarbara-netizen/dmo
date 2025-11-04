@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import json from '../assets/experiences.json'
-import {VMap, VMapOsmTileLayer, VMapZoomControl} from 'vue-map-ui';
+import {VMap, VMapGoogleTileLayer, VMapZoomControl} from 'vue-map-ui';
 import type {LatLng, LatLngBounds, LatLngTuple, Marker} from 'leaflet';
 import * as L from "leaflet";
 import type { ViewChangedEvent } from 'vue-use-leaflet';
@@ -20,8 +20,8 @@ onMounted(() => {
           .setContent(
               '<div class="w-full rounded-xl relative">' +
               '    <div class="absolute flex gap-2 top-3 left-3 w-full">' +
-              '      <span class="max-w-[42.5%] rounded-full px-2 py-1 text-xs '+ 'bg-sky-200' +' whitespace-nowrap overflow-hidden text-ellipsis">' + el.tags[0] + '</span>' +
-              '      <span class="max-w-[42.5%] rounded-full px-2 py-1 text-xs '+ 'bg-sky-200' +' whitespace-nowrap overflow-hidden text-ellipsis">' + el.tags[1] + '</span>' +
+              '      <span class="max-w-[42.5%] rounded-full px-2 py-1 text-xs bg-violet-200 whitespace-nowrap overflow-hidden text-ellipsis">' + el.tags[0] + '</span>' +
+              '      <span class="max-w-[42.5%] rounded-full px-2 py-1 text-xs bg-violet-200 whitespace-nowrap overflow-hidden text-ellipsis">' + el.tags[1] + '</span>' +
               '    </div>' +
               '    <img src="'+ images[removeExtension(el.immagine) as string] +'" alt="copertina esperienza" class="rounded-t-xl w-full h-[148px] object-cover"/>' +
               '    <div class="p-4">' +
@@ -44,8 +44,8 @@ onMounted(() => {
           .setContent(
               '<div class="w-full rounded-xl relative">' +
               '    <div class="absolute flex gap-2 top-3 left-3 w-full">' +
-              '      <span class="max-w-[42.5%] rounded-full px-2 py-1 text-xs '+ 'bg-sky-200' +' whitespace-nowrap overflow-hidden text-ellipsis">' + el.tags[0] + '</span>' +
-              '      <span class="max-w-[42.5%] rounded-full px-2 py-1 text-xs '+ 'bg-sky-200' +' whitespace-nowrap overflow-hidden text-ellipsis">' + el.tags[1] + '</span>' +
+              '      <span class="max-w-[42.5%] rounded-full px-2 py-1 text-xs bg-amber-300 whitespace-nowrap overflow-hidden text-ellipsis">' + el.tags[0] + '</span>' +
+              '      <span class="max-w-[42.5%] rounded-full px-2 py-1 text-xs bg-amber-300 whitespace-nowrap overflow-hidden text-ellipsis">' + el.tags[1] + '</span>' +
               '    </div>' +
               '    <img src="'+ images[removeExtension(el.immagine) as string] +'" alt="copertina esperienza" class="rounded-t-xl w-full h-[148px] object-cover"/>' +
               '    <div class="p-4">' +
@@ -68,8 +68,8 @@ onMounted(() => {
           .setContent(
               '<div class="w-full rounded-xl relative">' +
               '    <div class="absolute flex gap-2 top-3 left-3 w-full">' +
-              '      <span class="max-w-[42.5%] rounded-full px-2 py-1 text-xs '+ 'bg-sky-200' +' whitespace-nowrap overflow-hidden text-ellipsis">' + el.tags[0] + '</span>' +
-              '      <span class="max-w-[42.5%] rounded-full px-2 py-1 text-xs '+ 'bg-sky-200' +' whitespace-nowrap overflow-hidden text-ellipsis">' + el.tags[1] + '</span>' +
+              '      <span class="max-w-[42.5%] rounded-full px-2 py-1 text-xs bg-sky-200 whitespace-nowrap overflow-hidden text-ellipsis">' + el.tags[0] + '</span>' +
+              '      <span class="max-w-[42.5%] rounded-full px-2 py-1 text-xs bg-sky-200 whitespace-nowrap overflow-hidden text-ellipsis">' + el.tags[1] + '</span>' +
               '    </div>' +
               '    <img src="'+ images[removeExtension(el.immagine) as string] +'" alt="copertina esperienza" class="rounded-t-xl w-full h-[148px] object-cover"/>' +
               '    <div class="p-4">' +
@@ -206,7 +206,7 @@ function setFilteredMarkers(filter:string) {
       </div>
 
       <VMap ref="map" style="height: 600px; border-radius: 8px" :center="center" :zoom="zoom" @view-changed="onViewChanged">
-        <VMapOsmTileLayer />
+        <VMapGoogleTileLayer />
         <VMapZoomControl />
       </VMap>
     </div>
