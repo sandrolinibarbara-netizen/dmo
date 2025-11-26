@@ -3,7 +3,7 @@
 @import 'tailwindcss/utilities.css';
 
 body {
-    background-color: #fff6ef;
+    background-color: #f0f8ff;
 }
 
 input::placeholder {

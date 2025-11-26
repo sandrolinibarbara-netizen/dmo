@@ -27,14 +27,14 @@ function slide(step:'prev'|'next') {
     <div class="w-[25%] h-auto">
       <img id="col-img-now" class="rounded-xl w-full h-full object-cover" :src="images[0]" alt="monumenti"/>
     </div>
-    <div class="w-[75%] flex flex-col items-end bg-[#fff6ef] relative z-10">
+    <div class="w-[75%] flex flex-col items-end bg-[#f0f8ff] relative z-10">
       <div class="flex gap-0.5">
         <img id="first-img" class="rounded-xl w-[30%] h-[400px] object-cover" :src="images[1]" alt="colomba"/>
         <img id="second-img" class="rounded-xl w-[30%] h-[400px] object-cover" :src="images[2]" alt="paese"/>
         <img id="third-img" class="rounded-xl w-[30%] h-[400px] object-cover" :src="images[3]" alt="laboratorio di liuteria"/>
         <img id="fourth-img" class="rounded-l-xl w-[10%] h-[400px] object-cover" :src="images[4]" alt="famiglia al museo"/>
       </div>
-      <div class="w-[95%] pt-12 pb-8 pl-4 pr-[calc(20%+(0.25rem*8))] flex items-center gap-12 bg-[#fff6ef] relative z-10">
+      <div class="w-[95%] pt-12 pb-8 pl-4 pr-[calc(20%+(0.25rem*8))] flex items-center gap-12 bg-[#f0f8ff] relative z-10">
         <button type="button" :disabled="disabled" @click="slide('prev')" class="p-3 flex items-center justify-center w-12 h-12 border-1 border-orange-800 text-orange-800 rounded-xl font-bold text-2xl">
           P
         </button>
